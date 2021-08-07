@@ -19,7 +19,7 @@ app.use(logger)
 let notes = [
   {
     id: 1,
-    content: 'HTML is easy but you can\'t xD',
+    content: 'HTML is easy but you cant xD',
     date: '2019-05-30T17:30:31.098Z',
     important: true
   },
@@ -98,7 +98,7 @@ app.use((request, response) => {
   })
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
